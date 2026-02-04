@@ -1,0 +1,74 @@
+
+:root {
+    --bg-dark: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --neon-blue: #38bdf8;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+
+.card {
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 20px !important;
+    color: var(--text-main);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 20px;
+}
+
+
+.table {
+    color: var(--text-main) !important;
+    border-color: var(--glass-border) !important;
+}
+
+.table thead {
+    background-color: rgba(56, 189, 248, 0.1) !important;
+    color: var(--neon-blue) !important;
+    border-bottom: 2px solid var(--neon-blue) !important;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    transform: scale(1.005);
+}
+
+/* 4. BOTONES - Mejoramos el aspecto general */
+.btn-primary {
+    background: linear-gradient(45deg, #0284c7, #38bdf8) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #059669, #10b981) !important;
+    border: none !important;
+}
+
+/* 5. INPUTS DE FORMULARIOS */
+.form-control {
+    background: rgba(15, 23, 42, 0.5) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: white !important;
+}
+
+.form-control:focus {
+    border-color: var(--neon-blue) !important;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2) !important;
+}
